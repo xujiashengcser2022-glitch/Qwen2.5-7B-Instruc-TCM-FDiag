@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use TCM-RAGF, please cite this work."
+title: "TCM-RAGF: A Four-Diagnostic Structured Dataset for TCM-Oriented Reasoning"
+authors:
+  - family-names: Xu
+    given-names: Jiasheng
+  - family-names: Zhang
+    given-names: Yushi
+year: 2026
+license: "CC-BY-NC-4.0"
+repository-code: "https://github.com/Arthur20240124/TCM-RAGF"
+abstract: "TCM-RAGF is a structured Traditional Chinese Medicine diagnostic dataset derived from the open ShenNong_TCM_Dataset and reorganized according to inspection, auscultation/olfaction, inquiry, and palpation."

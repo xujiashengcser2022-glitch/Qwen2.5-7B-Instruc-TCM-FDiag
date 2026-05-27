@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large local files
+*.zip
+*.tar.gz
+
+# Optional raw/intermediate data
+data/raw/
+data/intermediate/
