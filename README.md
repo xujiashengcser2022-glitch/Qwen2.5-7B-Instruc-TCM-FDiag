@@ -294,9 +294,11 @@ This disclaimer is included to clarify the medical safety, ethical, and responsi
 
 ---
 
-## 📚 Citation
+## 📚 Citation　📚 引用
 
 If you use TCM-RAGF in your research, please cite:
+
+如果您在研究中使用了 TCM-RAGF，请引用：
 
 ```bibtex
 @article{xu2026tcmragf,
