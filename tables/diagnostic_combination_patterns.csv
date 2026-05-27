@@ -1,0 +1,10 @@
+diagnostic_combination,original_count,original_percentage,filtered_count,filtered_percentage
+Inquiry only,92563,82.23%,80482,80.80%
+Auscultation/Olfaction + Inquiry,14863,13.20%,14460,14.52%
+Inspection + Inquiry,3969,3.53%,3721,3.74%
+Inquiry + Palpation,734,0.65%,535,0.54%
+Inspection + Auscultation/Olfaction + Inquiry,395,0.35%,382,0.38%
+Auscultation/Olfaction + Inquiry + Palpation,29,0.03%,28,0.03%
+Inspection + Inquiry + Palpation,4,0.00%,2,0.00%
+All four diagnostic methods,1,0.00%,1,0.00%
+Total samples,112565,100.00%,99611,100.00%

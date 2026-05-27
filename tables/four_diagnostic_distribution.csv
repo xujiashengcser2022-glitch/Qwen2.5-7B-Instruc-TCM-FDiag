@@ -1,0 +1,6 @@
+diagnostic_method,original_count,original_percentage,filtered_count,filtered_percentage
+"Inspection, Wang (望)",4369,3.88%,4106,4.12%
+"Auscultation/Olfaction, Wen (闻)",15288,13.58%,14871,14.93%
+"Inquiry, Wen (问)",112558,99.99%,99611,100.00%
+"Palpation, Qie (切)",768,0.68%,566,0.57%
+Total samples,112565,100.00%,99611,100.00%
