@@ -5,25 +5,35 @@
 </p>
 
 <p align="center">
-  <b>Language:</b> English
+  <b>Dataset</b> · <b>Four Diagnostic Methods</b> · <b>TCM Reasoning</b> · <b>RAG</b> · <b>Medical LLMs</b>
 </p>
 
 ---
 
 ## ⚡ Overview
 
-**TCM-RAGF** is a structured dataset designed for Traditional Chinese Medicine (TCM)-oriented large language model research. It was constructed from the open **ShenNong_TCM_Dataset (v0.2)** and reorganized according to the classical four diagnostic methods of TCM:
+**TCM-RAGF** is a structured Traditional Chinese Medicine (TCM) diagnostic dataset designed for TCM-oriented large language model research. It is derived from the open **ShenNong_TCM_Dataset (v0.2)** and reorganized according to the classical four diagnostic methods of TCM:
 
 - **Inspection (望, Wang)**
 - **Auscultation/Olfaction (闻, Wen)**
 - **Inquiry (问, Wen)**
 - **Palpation (切, Qie)**
 
-Unlike ordinary medical dialogue datasets or flat instruction-response corpora, TCM-RAGF explicitly separates clinically available evidence into four diagnostic fields and attaches syndrome-oriented reasoning and risk-aware responses. The dataset is intended to support research on TCM diagnostic reasoning, structured medical instruction tuning, retrieval-augmented generation (RAG), and clinical-safety-aware medical AI systems.
+Unlike ordinary medical dialogue datasets or flat instruction-response corpora, TCM-RAGF explicitly separates available clinical evidence into four diagnostic fields and provides syndrome-oriented reasoning with risk-aware medical language. It is intended to support research on TCM diagnostic reasoning, structured medical instruction tuning, retrieval-augmented generation (RAG), and responsible medical AI systems.
 
 The strict released version contains **99,611 structured diagnostic samples**, obtained after filtering **12,954** non-diagnostic or abnormal records from **112,565** original ShenNong-derived samples. The filtering rate is **11.51%**, and the retention rate is **88.49%**.
 
-> **Important medical disclaimer:** TCM-RAGF is intended only for academic research, benchmark evaluation, and non-commercial development of TCM-oriented AI systems. It must not be used as a substitute for professional medical diagnosis, treatment, prescription, dosage recommendation, or emergency medical guidance. See [Medical_Disclaimer.md](Medical_Disclaimer.md).
+> **Medical disclaimer:** This dataset is for academic research, benchmark evaluation, and non-commercial development only. It must not be used as a substitute for professional medical diagnosis, treatment, prescription, dosage recommendation, or emergency medical guidance. See [Medical_Disclaimer.md](Medical_Disclaimer.md).
+
+---
+
+## 🩺 TCM Diagnosis Example
+
+The following example illustrates how a user query can be reorganized into a four-diagnostic TCM consultation format, with structured diagnostic clues, syndrome-oriented assessment, cautious formula suggestions, and a clinical safety note.
+
+<p align="center">
+  <img src="images/tcm_diagnosis_example_excessive_salivation.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
+</p>
 
 ---
 
@@ -31,9 +41,9 @@ The strict released version contains **99,611 structured diagnostic samples**, o
 
 - **Four-diagnostic structure:** Each retained sample is rewritten into inspection, auscultation/olfaction, inquiry, and palpation fields.
 - **Multi-label diagnostic evidence:** The four diagnostic methods are not mutually exclusive. A sample may contain evidence from one or more diagnostic methods.
-- **No hallucinated clinical evidence:** Unreported fields are kept empty rather than completed by inference.
-- **Filtered symptom field:** Request-like or non-diagnostic components are removed or weakened, while clinically relevant symptoms are preserved in `filtered_symptom`.
-- **Teacher-checker refinement:** DeepSeek-R1-Distill-Llama-70B is used as the primary refinement model, and Baichuan-M2 is used as the professional medical checking model.
+- **No hallucinated clinical evidence:** Unreported tongue, pulse, odor, complexion, or palpation information is kept empty rather than inferred.
+- **Filtered symptom field:** Non-diagnostic request components are removed or weakened while clinically relevant symptoms are preserved in `filtered_symptom`.
+- **Teacher-checker refinement:** `DeepSeek-R1-Distill-Llama-70B` is used as the primary refinement model, and `Baichuan-M2` is used as the professional medical checking model.
 - **Risk-aware responses:** The dataset emphasizes clinical caution, evidence-recommendation alignment, and avoidance of unsupported prescription or dosage advice.
 - **Open release:** The dataset is released for non-commercial academic research under **CC BY-NC 4.0**.
 
@@ -137,10 +147,9 @@ The `output` field generally follows this structure:
 问：
 切：
 
-根据以上情况可能是……
-推理过程：……
-中医建议：……
-中药或方剂推荐：……
+推理过程：
+中医建议：
+中药或方剂推荐：
 ```
 
 ### Missing Information Rule
@@ -149,7 +158,7 @@ If the original query does not provide tongue, pulse, odor, complexion, palpatio
 
 ---
 
-## 📝 Representative Example
+## 📝 Representative JSON Example
 
 ```json
 {
@@ -306,15 +315,9 @@ We sincerely acknowledge the open-source datasets, model families, benchmark pro
 - **ShenNong_TCM_Dataset**: the source dataset from which TCM-RAGF was restructured.
 - **MedBench**: used for multidimensional Chinese medical LLM evaluation.
 - **TCM-Eval** and **TCM-3CEval**: used as expert-level TCM evaluation references.
-- **TCM-BEST4SDT**: an open benchmark for syndrome differentiation and treatment evaluation, whose public documentation style helped inspire the organization of this README.
 
-### Large Language Models and Medical LLMs Mentioned or Referenced in the Paper
+### Large Language Models and Medical LLMs
 
-- `TCM-FDiag`
-- `Qwen2.5-7B-Instruct`
-- `Qwen2.5-VL-7B-Instruct`
-- `DeepSeek-R1-Distill-Llama-70B`
-- `DeepSeek-V3.2-Thinking`
 - `DeepSeek-V3.2-Instruct`
 - `Baichuan-M2`
 - `GLM-4.5`
@@ -322,13 +325,6 @@ We sincerely acknowledge the open-source datasets, model families, benchmark pro
 - `GPT-5.1`
 - `Gork4.1`
 - `HuatuoGPT`
-- `ChatMed`
-- `BianQue`
-- `PMC-LLaMA`
-- `MedAlpaca`
-- `Zhongjing`
-- `Med-PaLM`
-- `Med-Flamingo`
 
 ### Frameworks and Libraries
 
