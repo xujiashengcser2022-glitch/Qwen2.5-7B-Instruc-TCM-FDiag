@@ -286,7 +286,7 @@ This disclaimer is included to clarify the medical safety, ethical, and responsi
 The following example illustrates how a user query can be reorganized into a four-diagnostic TCM consultation format, with structured diagnostic clues, syndrome-oriented assessment, cautious formula suggestions, and a clinical safety note.
 
 <p align="center">
-  <img src="images/tcm_diagnosis_example_excessive_salivation.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
+  <img src="cv.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
 </p>
 
 **TCM Diagnosis Example: Excessive Salivation**
