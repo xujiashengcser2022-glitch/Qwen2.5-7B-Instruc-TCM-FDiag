@@ -27,19 +27,6 @@ The strict released version contains **99,611 structured diagnostic samples**, o
 
 ---
 
-## 🩺 TCM Diagnosis Example
-
-The following example illustrates how a user query can be reorganized into a four-diagnostic TCM consultation format, with structured diagnostic clues, syndrome-oriented assessment, cautious formula suggestions, and a clinical safety note.
-
-<p align="center">
-  <img src="images/tcm_diagnosis_example_excessive_salivation.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
-</p>
-
-**TCM Diagnosis Example: Excessive Salivation**
-
-This example shows how TCM-RAGF organizes a consultation-style query into a structured four-diagnostic response. The user reports excessive salivation that becomes more severe during certain periods and asks about possible Chinese herbal medicines or formulas. The response first separates available evidence into inspection, auscultation/olfaction, inquiry, and palpation fields, then provides a syndrome-oriented assessment and cautious formula suggestions. It also includes a clinical safety note emphasizing that medication should be selected according to individual conditions and used under professional guidance.
-
----
 
 ## 📌 Key Features
 
@@ -291,6 +278,20 @@ They are **not** intended to provide medical diagnosis, treatment decisions, pre
 Users should not rely on the dataset or model outputs for self-diagnosis or self-medication. For persistent, worsening, acute, or high-risk symptoms, users should seek timely evaluation and treatment from qualified medical professionals.
 
 This disclaimer is included to clarify the medical safety, ethical, and responsibility boundaries of the dataset and model.
+
+---
+
+## 🩺 TCM Diagnosis Example
+
+The following example illustrates how a user query can be reorganized into a four-diagnostic TCM consultation format, with structured diagnostic clues, syndrome-oriented assessment, cautious formula suggestions, and a clinical safety note.
+
+<p align="center">
+  <img src="images/tcm_diagnosis_example_excessive_salivation.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
+</p>
+
+**TCM Diagnosis Example: Excessive Salivation**
+
+This example shows how TCM-RAGF organizes a consultation-style query into a structured four-diagnostic response. The user reports excessive salivation that becomes more severe during certain periods and asks about possible Chinese herbal medicines or formulas. The response first separates available evidence into inspection, auscultation/olfaction, inquiry, and palpation fields, then provides a syndrome-oriented assessment and cautious formula suggestions. It also includes a clinical safety note emphasizing that medication should be selected according to individual conditions and used under professional guidance.
 
 ---
 
