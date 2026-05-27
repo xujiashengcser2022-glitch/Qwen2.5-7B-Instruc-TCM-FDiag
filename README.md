@@ -35,6 +35,10 @@ The following example illustrates how a user query can be reorganized into a fou
   <img src="images/tcm_diagnosis_example_excessive_salivation.png" width="85%" alt="TCM Diagnosis Example: Excessive Salivation"/>
 </p>
 
+**TCM Diagnosis Example: Excessive Salivation**
+
+This example shows how TCM-RAGF organizes a consultation-style query into a structured four-diagnostic response. The user reports excessive salivation that becomes more severe during certain periods and asks about possible Chinese herbal medicines or formulas. The response first separates available evidence into inspection, auscultation/olfaction, inquiry, and palpation fields, then provides a syndrome-oriented assessment and cautious formula suggestions. It also includes a clinical safety note emphasizing that medication should be selected according to individual conditions and used under professional guidance.
+
 ---
 
 ## 📌 Key Features
@@ -335,5 +339,15 @@ We sincerely acknowledge the open-source datasets, model families, benchmark pro
 - **Python open-source ecosystem**
 
 We also thank the TCM practitioners involved in clinical expert review and the broader open-source medical AI community for promoting reproducible and responsible research.
+
+---
+
+
+## 📬 Contact
+
+For questions about the dataset, please contact:
+
+- Jiasheng Xu
+- Corresponding author: Yushi Zhang, `zhangyushibest@126.com`
 
 ---
