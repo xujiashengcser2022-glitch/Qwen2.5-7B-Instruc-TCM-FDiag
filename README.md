@@ -350,7 +350,7 @@ We also thank the TCM practitioners involved in clinical expert review and the b
 
 For questions about the dataset, please contact:
 
-- Jiasheng Xu
+- Jiasheng Xu， `xujiasheng@muc.edu.cn `
 - Corresponding author: Yushi Zhang, `zhangyushibest@126.com`
 
 ---
